@@ -1,0 +1,93 @@
+
+* {box-sizing:border-box}
+
+body{
+    background-color: rgb(29, 233, 10);
+}
+
+
+
+:root{
+    --blue:rgb(0, 124, 226);
+    --green: rgb(2, 197, 44);
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin:50px;
+    padding: 15px;
+   
+}
+
+main h2{
+    text-transform: uppercase;
+    color:var(--blue);
+}
+
+main form {
+    display:grid;
+    grid-template-columns: 1fr;
+
+}
+main form .input{
+    width: 100%;
+    padding: 5px;
+}
+
+main form .input .group{
+    display: flex;
+}
+
+main form .input .group .select{
+    width:80%;
+}
+
+main form .input .group .number{
+    width:20%;
+}
+
+main form .input input[type="text"], input[type="number"]{
+    width: 100%;
+    padding: 10px;
+}
+
+main form .input select{
+    width: 100%;
+    padding: 10px;
+}
+
+main form .input #send{
+    width: 150px;
+    padding: 15px;
+    color:#c21616f8;
+    background: var(--blue);
+    outline: none;
+}
+
+
+main form .input #send:hover{
+    background: var(--green);
+    cursor: pointer;
+}
+
+main .card{
+    margin-top: 25px;
+    padding: 50px;
+    box-shadow:  1px 1px 3px var(--blue);
+}
+
+main .card .data{
+    margin-bottom: 10px;
+}
+
+main .card .data input[type="text"]{
+    height:35px;
+    padding:5px;
+    margin-bottom: 5px;
+    background: white;
+}
+
+main .card .data #name_client, #address_client{
+    width: 100%;
+}
